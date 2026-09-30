@@ -445,3 +445,15 @@ section{position:relative}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+/* ---------- Mobile horizontal-scroll fix ---------- */
+@media (max-width:991.98px){
+  html,body{overflow-x:hidden;max-width:100%}
+  .row.g-5,.row.gx-5{--bs-gutter-x:1.5rem}
+  .row.g-4{--bs-gutter-x:1.5rem}
+  .float-card{right:0}
+  .spin-badge{right:0}
+  .pkg-card--hero{outline-offset:-2px}
+  .h-viewport{max-width:100vw}
+  .marquee-wrap,.site-footer,.laser,.about,.experiences,.visit,.policy,.careers{overflow-x:hidden}
+}
